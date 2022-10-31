@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BulkyBook.Models.CoverType>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<partial name="_Notification" />
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary"> Danh sách các dòng điện thoại hiện nay</h2>
+        </div>
+        <div class="col-6  text-end">
+            <a asp-controller="CoverType" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> &nbsp; Thêm dòng điện thoại mới
+            </a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-hover table-striped border-dark bg-white" style="width:100%">
+    <thead>
+        <tr class="table-dark">
+            <th>
+                <a class="nav-link text-white">Dòng</a>
+            </th>
+            <th>
+                Chỉnh sửa
+            </th>
+            <th>
+                Xóa
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td width="80%">
+                    <a class="nav-link text-black">@obj.Name</a>
+                </td>
+                <td width="10%">
+                    <div class="w-75 btn-group" role="group">
+                        <a class="nav-link text-black" asp-controller="CoverType" asp-action="Edit" asp-route-id="@obj.Id"
+                        class="btn btn-primary" mx-2><i class="bi bi-pencil-square"></i>  Chỉnh sửa</a>
+                    </div>
+                </td>
+                <td width="10%">
+                    <div class="w-75 btn-group" role="group">
+                        <a class="nav-link text-black" asp-controller="CoverType" asp-action="Delete" asp-route-id="@obj.Id"
+                       class="btn btn-danger" mx-2><i class="bi bi-trash"></i>  Xóa</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

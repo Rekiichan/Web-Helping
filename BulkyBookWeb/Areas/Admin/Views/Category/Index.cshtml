@@ -1,0 +1,63 @@
+﻿@model IEnumerable<BulkyBook.Models.Category>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<partial name="_Notification" />
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary  fw-bold"> Danh sách màu</h2>
+        </div>
+        <div class="col-6  fw-bold text-end">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> &nbsp; Thêm màu mới
+            </a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-hover table-striped border-dark bg-white" style="width:100%">
+    <thead>
+        <tr class="table-dark">
+            <th scope="col">
+                <a class="nav-link text-white">Màu</a>
+            </th>
+            <th scope="col">
+                <a class="nav-link text-white">Số lượng</a>
+            </th>
+            <th scope="col">
+                <a class="nav-link text-white">Chỉnh sửa</a>
+            </th>
+            <th scope="col">
+                <a class="nav-link text-white">Xóa</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr class="table-active">
+                <td width="40%">
+                    <a class="nav-link text-dark">@obj.Name</a>
+                </td>
+                <td width="40%">
+                    <a class="nav-link text-dark">@obj.DisplayOrder</a>
+                </td>
+                <td width="10%">
+                    <div class="w-75 btn-group" role="group">
+                        <a class="nav-link text-dark" asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id"
+                       class="btn btn-primary" mx-2><i class="bi bi-pencil-square"></i>  Chỉnh </a>
+                    </div>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a style="left:4empx" class="nav-link text-dark" asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id"
+                       class="btn btn-dan" mx-2><i class="bi bi-trash" class="btn btn-danger" mx-2></i>  Xóa</a>
+                    </div>
+                </td>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

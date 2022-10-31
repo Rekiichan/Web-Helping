@@ -1,0 +1,17 @@
+D:\visualWorkspace\BulkyBook.DataAccess\bin\Release\net6.0\BulkyBook.DataAccess.deps.json
+D:\visualWorkspace\BulkyBook.DataAccess\bin\Release\net6.0\BulkyBook.DataAccess.dll
+D:\visualWorkspace\BulkyBook.DataAccess\bin\Release\net6.0\BulkyBook.DataAccess.pdb
+D:\visualWorkspace\BulkyBook.DataAccess\bin\Release\net6.0\BulkyBook.Models.dll
+D:\visualWorkspace\BulkyBook.DataAccess\bin\Release\net6.0\BulkyBook.Utility.dll
+D:\visualWorkspace\BulkyBook.DataAccess\bin\Release\net6.0\BulkyBook.Models.pdb
+D:\visualWorkspace\BulkyBook.DataAccess\bin\Release\net6.0\BulkyBook.Utility.pdb
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.csproj.AssemblyReference.cache
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.AssemblyInfoInputs.cache
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.AssemblyInfo.cs
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.csproj.CoreCompileInputs.cache
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.csproj.CopyComplete
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.dll
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\refint\BulkyBook.DataAccess.dll
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\BulkyBook.DataAccess.pdb
+D:\visualWorkspace\BulkyBook.DataAccess\obj\Release\net6.0\ref\BulkyBook.DataAccess.dll

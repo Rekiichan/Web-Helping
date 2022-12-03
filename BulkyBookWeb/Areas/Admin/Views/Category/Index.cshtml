@@ -23,9 +23,9 @@
             <th scope="col">
                 <a class="nav-link text-white">Màu</a>
             </th>
-            <th scope="col">
+@*            <th scope="col">
                 <a class="nav-link text-white">Số lượng</a>
-            </th>
+            </th>*@
             <th scope="col">
                 <a class="nav-link text-white">Chỉnh sửa</a>
             </th>
@@ -38,13 +38,13 @@
         @foreach (var obj in Model)
         {
             <tr class="table-active">
-                <td width="40%">
+                <td width="50%">
                     <a class="nav-link text-dark">@obj.Name</a>
                 </td>
-                <td width="40%">
+                @*<td width="40%">
                     <a class="nav-link text-dark">@obj.DisplayOrder</a>
-                </td>
-                <td width="10%">
+                </td>*@
+                <td width="50%">
                     <div class="w-75 btn-group" role="group">
                         <a class="nav-link text-dark" asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id"
                        class="btn btn-primary" mx-2><i class="bi bi-pencil-square"></i>  Chỉnh </a>
